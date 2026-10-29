@@ -2,7 +2,7 @@
 
 Analysis of the UEFA Champions League 2024/25 using Python and Power BI. The project covers data extraction and transformation to build interactive visualizations exploring team and player performances during the League Phase.
 
-[Click here to access the Power BI report](https://app.powerbi.com/view?r=eyJrIjoiNTQ0OGQyZDItM2IxYS00YWYyLWJhZWUtOTZlZTJlNzAzY2I2IiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9)
+[Click here to access the Power BI report](https://app.powerbi.com/view?r=eyJrIjoiNTQ0OGQyZDItM2IxYS00YWYyLWJhZWUtOTZlZTJlNzAzY2I2IiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9&language=en-US)
 
 ## Objectives
 

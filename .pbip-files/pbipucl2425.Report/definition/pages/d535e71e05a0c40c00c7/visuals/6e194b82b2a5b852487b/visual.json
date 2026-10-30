@@ -51,8 +51,8 @@
                 }
               },
               "queryRef": "Sum(fieldtiltucl2425.Field_Tilt_Over_Matches%)",
-              "nativeQueryRef": "Field tilt average",
-              "displayName": "Field tilt average"
+              "nativeQueryRef": "Cumulative field tilt",
+              "displayName": "Cumulative field tilt"
             }
           ]
         }
@@ -228,7 +228,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Field tilt average'"
+                  "Value": "'Cumulative field tilt'"
                 }
               }
             }

@@ -161,7 +161,7 @@
                           "max": {
                             "color": {
                               "Literal": {
-                                "Value": "'maxColor'"
+                                "Value": "'#C084FC'"
                               }
                             }
                           },

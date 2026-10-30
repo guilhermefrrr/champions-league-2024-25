@@ -257,6 +257,43 @@
           "selector": {
             "metadata": "Medidas.Short_Cmp/Passes_Cmp"
           }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Tkl_Att 3rd/Tkl"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C084FC'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Tkl_Def 3rd/Tkl"
+          }
         }
       ]
     },
@@ -343,48 +380,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "63338a152ab4ce569510",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Tkl_Att 3rd/Tkl"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "cbd47bf233e0c50223be",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Tkl_Def 3rd/Tkl"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "ad0d997d48abc8014469",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ucl2425"
-              }
-            },
-            "Property": "Player"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "fe7dce32c25455000b76",
         "field": {
           "Column": {
@@ -434,5 +429,6 @@
         "howCreated": "User"
       }
     ]
-  }
+  },
+  "isHidden": true
 }

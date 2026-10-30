@@ -218,7 +218,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#3562A6'"
+                      "Value": "'#C084FC'"
                     }
                   }
                 }
@@ -235,8 +235,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#12239E'"
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
                     }
                   }
                 }
@@ -350,48 +351,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "169fb864760c5a6e11a7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Long_Cmp/Passes_Cmp"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "888e6c47371359ed807e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Short_Cmp/Passes_Cmp"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5f6ccc840583621d6041",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ucl2425"
-              }
-            },
-            "Property": "Player"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "04abdef15000bae94b7a",
         "field": {
           "Column": {
@@ -404,42 +363,9 @@
           }
         },
         "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "u",
-              "Entity": "ucl2425",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 2,
-                  "Left": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "u"
-                        }
-                      },
-                      "Property": "Passes_Cmp"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "50L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
         "howCreated": "User"
       }
     ]
-  }
+  },
+  "isHidden": true
 }

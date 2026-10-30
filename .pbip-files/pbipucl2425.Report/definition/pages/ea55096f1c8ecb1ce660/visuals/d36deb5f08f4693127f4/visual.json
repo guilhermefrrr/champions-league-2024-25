@@ -251,6 +251,24 @@
           "selector": {
             "metadata": "Medidas.Short_Cmp/Passes_Cmp"
           }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C084FC'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Tkl_Def 3rd/Tkl"
+          }
         }
       ]
     },
@@ -333,6 +351,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "isHidden": true
+  }
 }

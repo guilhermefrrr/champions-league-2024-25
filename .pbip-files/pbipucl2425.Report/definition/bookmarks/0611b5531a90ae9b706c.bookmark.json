@@ -1,0 +1,542 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "4. xG Barras",
+  "name": "0611b5531a90ae9b706c",
+  "options": {
+    "targetVisualNames": [],
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "62ce8f9416012a32d0e7",
+    "sections": {
+      "62ce8f9416012a32d0e7": {
+        "visualContainers": {
+          "3f02c65f961017eca513": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "14b0393edb2df701defd": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "462a3fe6d06760a07086",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ucl2425_squad_or_vs"
+                        }
+                      },
+                      "Property": "Squad_or_vs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ad9c52970690782cb447",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ucl2425_squad_or_vs"
+                            }
+                          },
+                          "Property": "xG"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c43eadff29c05957e808",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ucl2425_squad_or_vs"
+                        }
+                      },
+                      "Property": "MD"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ucl2425_squad_or_vs"
+                            }
+                          },
+                          "Property": "xG"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ucl2425_squad_or_vs"
+                        }
+                      },
+                      "Property": "MD"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "7bd568291e7ca13b11e6": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9ed649323654ab208ba4",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ucl2425_squad_or_vs"
+                        }
+                      },
+                      "Property": "Squad_or_vs"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ucl2425_squad_or_vs"
+                        }
+                      },
+                      "Property": "Squad_or_vs"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "9cd05a15af7b41ce6727": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e4a7c30c8b5920106b08",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ucl2425_squad_or_vs"
+                        }
+                      },
+                      "Property": "Squad_or_vs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1b3c96b9301791a3170a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ucl2425_squad_or_vs"
+                            }
+                          },
+                          "Property": "Touches_Att Pen"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e36b90acdd0b668c7baa",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ucl2425_squad_or_vs"
+                            }
+                          },
+                          "Property": "Sh"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8167091abc054e8b4903",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ucl2425_squad_or_vs"
+                            }
+                          },
+                          "Property": "Passes_PrgP"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "0c7e78cf46d2c8b3e00b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ucl2425_squad_or_vs"
+                            }
+                          },
+                          "Property": "Passes_Cmp"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {}
+            }
+          },
+          "ba1215df09559ff64db6": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "cc34b9ba509ca18db1e7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MDs"
+                        }
+                      },
+                      "Property": "MD"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Between'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "MDs"
+                        }
+                      },
+                      "Property": "MD"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "4a47b191e01c98384edb": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8b1f20eb2151d61a4859",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ucl2425_2vs"
+                            }
+                          },
+                          "Property": "xG"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9bad5b4323823bc0aa0e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ucl2425_2vs"
+                        }
+                      },
+                      "Property": "Squad"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ucl2425_2vs"
+                            }
+                          },
+                          "Property": "xG"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ucl2425_2vs"
+                        }
+                      },
+                      "Property": "Squad"
+                    }
+                  }
+                ]
+              },
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "9f7e7ea05e0d117003c2": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "3286a95faecde229a7cc": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "eee79757d5ea0478e235": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "5365880bda58d0522a00",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ucl2425_2"
+                        }
+                      },
+                      "Property": "Squad"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "699ea5d0270d6d3480ab",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ucl2425_2"
+                            }
+                          },
+                          "Property": "xG"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ucl2425_2"
+                            }
+                          },
+                          "Property": "xG"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ucl2425_2"
+                        }
+                      },
+                      "Property": "Squad"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d0cae46660dccc611db1": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "65e92cd39ce226885015": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

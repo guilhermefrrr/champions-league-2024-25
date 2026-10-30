@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "f2cb4d353b7661de678f",
+  "displayName": "Penalty area presence",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#091442'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "ba3352f39840824a3200",
+      "target": "4fce9f2d6ec50f4494e3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "0f207c2af24a7ceaf62b",
+      "target": "4fce9f2d6ec50f4494e3",
+      "type": "DataFilter"
+    }
+  ]
+}

@@ -1065,14 +1065,20 @@ table ucl2425
 				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"fixturesucl2425.Home", "fixturesucl2425.Away"}),
 				    #"Inserted Merged Column" = Table.AddColumn(#"Removed Columns", "vsSquad", each Text.Combine({"vs ", [Custom]}), type text),
 				    #"Removed Columns1" = Table.RemoveColumns(#"Inserted Merged Column",{"Custom"}),
-				    #"Added Custom1" = Table.AddColumn(#"Removed Columns1", "G-xG", each [Gls] - [xAG]),
+				    #"Added Custom1" = Table.AddColumn(#"Removed Columns1", "G-xG", each [Gls] - [xG]),
 				    #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom1",{{"G-xG", type number}}),
 				    #"Added Custom2" = Table.AddColumn(#"Changed Type1", "A-xA", each [Ast] - [xA]),
 				    #"Changed Type2" = Table.TransformColumnTypes(#"Added Custom2",{{"A-xA", type number}}),
 				    #"Added Custom3" = Table.AddColumn(#"Changed Type2", "CPA+PPA", each [Carries_CPA] + [PPA]),
-				    #"Changed Type3" = Table.TransformColumnTypes(#"Added Custom3",{{"CPA+PPA", Int64.Type}})
+				    #"Changed Type3" = Table.TransformColumnTypes(#"Added Custom3",{{"CPA+PPA", Int64.Type}}),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Changed Type3","Paris S-G","Paris Saint-Germain",Replacer.ReplaceValue,{"Squad"}),
+				    #"Valor Substituído1" = Table.ReplaceValue(#"Valor Substituído","Inter","Internazionale",Replacer.ReplaceValue,{"Squad"}),
+				    #"Valor Substituído2" = Table.ReplaceValue(#"Valor Substituído1","Leverkusen","Bayer Leverkusen",Replacer.ReplaceValue,{"Squad"}),
+				    #"Valor Substituído3" = Table.ReplaceValue(#"Valor Substituído2","RB Salzburg","Red Bull Salzburg",Replacer.ReplaceValue,{"Squad"}),
+				    #"Valor Substituído4" = Table.ReplaceValue(#"Valor Substituído3","Red Star","Red Star Belgrade",Replacer.ReplaceValue,{"Squad"}),
+				    #"Valor Substituído5" = Table.ReplaceValue(#"Valor Substituído4","Shakhtar","Shakhtar Donetsk",Replacer.ReplaceValue,{"Squad"})
 				in
-				    #"Changed Type3"
+				    #"Valor Substituído5"
 
 	annotation PBI_NavigationStepName = Navegação
 

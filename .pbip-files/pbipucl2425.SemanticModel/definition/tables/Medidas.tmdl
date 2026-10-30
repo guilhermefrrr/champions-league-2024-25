@@ -283,7 +283,14 @@ table Medidas
 			```
 		lineageTag: d7272b05-33a8-4252-b6a3-48c9bf6e691b
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		formatStringDefinition =
+				SWITCH (
+				    SELECTEDVALUE ( Categories[Category] ),
+				    "xG", "0.0",
+				    "xA", "0.0",
+				    "Non-penalty xG", "0.0",
+				    "0"
+				)
 
 	measure SelectedStatAvg =
 			

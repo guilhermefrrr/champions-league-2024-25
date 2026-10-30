@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "18837293c9c3d0cc67ed",
+  "displayName": "Share of participation",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#091442'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "5977f817cc3b69bb5471",
+      "target": "09c1f589a7007ae0d325",
+      "type": "NoFilter"
+    },
+    {
+      "source": "09c1f589a7007ae0d325",
+      "target": "5a4253a560b090e6982c",
+      "type": "HighlightFilter"
+    },
+    {
+      "source": "5a4253a560b090e6982c",
+      "target": "09c1f589a7007ae0d325",
+      "type": "NoFilter"
+    }
+  ]
+}

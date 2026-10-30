@@ -7,8 +7,6 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBIDesktopVersion = 2.141.1558.0 (25.03)+75b5f06a991f8f8a8a4d6b6fcd0f66e1ec2d6fdc
-
 annotation PBI_QueryOrder = ["ucl2425","fixturesucl2425","fieldtiltucl2425","MDs","ucl2425_vs","ucl2425_squad","ucl2425_squad_or_vs"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1

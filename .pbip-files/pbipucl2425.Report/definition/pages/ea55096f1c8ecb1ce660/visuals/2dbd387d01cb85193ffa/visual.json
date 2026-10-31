@@ -172,7 +172,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#3562A6'"
+                      "Value": "'#C084FC'"
                     }
                   }
                 }
@@ -286,6 +286,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "isHidden": true
+  }
 }

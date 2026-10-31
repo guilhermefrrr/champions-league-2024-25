@@ -5,7 +5,7 @@ Analysis of the UEFA Champions League 2024/25 League Phase using Python and Powe
 
 [Click here to access the Power BI report](https://app.powerbi.com/view?r=eyJrIjoiNTQ0OGQyZDItM2IxYS00YWYyLWJhZWUtOTZlZTJlNzAzY2I2IiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9&language=en-US)
 
-![Field tilt page](images/field-tilt.png)
+![Field tilt page](images/field-tilt.jpg)
 
 ![Finishing page](images/finishing.png)
 

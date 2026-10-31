@@ -1,7 +1,7 @@
 # Uefa Champions League 2024/25 Analysis
 
 
-Analysis of the UEFA Champions League 2024/25 League Phase using Python and Power BI. The project covers data extraction and transformation, a custom territorial-dominance metric (Field Tilt), and an interactive report exploring team and player performance.
+Analysis of the Uefa Champions League 2024/25 League Phase using Python and Power BI. The project covers data extraction and transformation, a custom territorial-dominance metric (Field Tilt), and an interactive report exploring team and player performance.
 
 [Click here to access the Power BI report](https://app.powerbi.com/view?r=eyJrIjoiNTQ0OGQyZDItM2IxYS00YWYyLWJhZWUtOTZlZTJlNzAzY2I2IiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9&language=en-US)
 
@@ -35,7 +35,7 @@ The report has eight pages. Seven of them have a **Players** view and a **Squads
 
 * **Python (pandas)**: data extraction, cleaning, merging, metric calculation and CSV processing.
 - **Google Colab:** notebook execution and Google Drive integration.
-- **Power BI:** data modeling, interactive reports, and visualizations.
+- **Power BI**: Power Query for loading the processed CSVs, data modeling, DAX measures and the interactive report.
 
 ## Data Processing and Methodology
 
@@ -76,7 +76,7 @@ Everything downstream can still be reproduced from the processed files in `compl
 
 ## Data Sources
 
-- [FBref – Uefa Champions League](https://fbref.com/en/comps/8/Champions-League-Stats): match reports, player statistics, and fixtures.
+- [FBref – Uefa Champions League](https://fbref.com/en/comps/8/Champions-League-Stats): match reports, player statistics, and fixtures. Data was collected for educational and personal use. FBref has its own terms of service and usage policies, which should be respected.
 - [Complete datasets](complete-data/): processed CSV files used in the project.
 
 ## Project Structure
@@ -90,4 +90,8 @@ Everything downstream can still be reproduced from the processed files in `compl
 - `.pbip-files/`: Power BI report and semantic model project files.
 - `pbipucl2425.pbip`: Power BI Project entry file.
 - `images/`: screenshots of the report used in this README.
+
+## Disclaimer
+
+This is an independent portfolio project. It is not affiliated with or endorsed by Uefa or FBref. The Uefa Champions League name and logo are trademarks of Uefa.
 

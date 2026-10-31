@@ -1,0 +1,1068 @@
+table ucl2425_vs
+	lineageTag: 56185a28-12fb-47aa-9130-01a783761d04
+
+	column MD
+		dataType: int64
+		formatString: 0
+		lineageTag: f96b702a-7797-4e4f-9f6b-96d406e10c45
+		summarizeBy: none
+		sourceColumn: MD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Match_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: e5ad8e56-ec03-47c4-a964-82743de31a9e
+		summarizeBy: none
+		sourceColumn: Match_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Player
+		dataType: string
+		lineageTag: 91d853d6-2d52-4e16-a5be-03a36d8db8f9
+		summarizeBy: none
+		sourceColumn: Player
+
+		annotation SummarizationSetBy = Automatic
+
+	column Squad
+		dataType: string
+		lineageTag: 0597f9c8-2485-4f5b-904b-ade2fcb7a579
+		summarizeBy: none
+		sourceColumn: Squad
+
+		annotation SummarizationSetBy = Automatic
+
+	column #
+		dataType: int64
+		formatString: 0
+		lineageTag: 4452e0ce-2572-4f27-a26f-e18c09cf8599
+		summarizeBy: sum
+		sourceColumn: #
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nation
+		dataType: string
+		lineageTag: 0bb201af-7b20-4142-bbc4-c3577eb47da5
+		summarizeBy: none
+		sourceColumn: Nation
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age_Years
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b69ad9c-2258-4d5c-bb23-3ac9d8127de0
+		summarizeBy: sum
+		sourceColumn: Age_Years
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age_Days
+		dataType: int64
+		formatString: 0
+		lineageTag: 64e7c4fa-d886-463c-9357-d48da295da4f
+		summarizeBy: sum
+		sourceColumn: Age_Days
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pos
+		dataType: string
+		lineageTag: 10bca98c-dc4a-46ea-aafd-026422fa43fa
+		summarizeBy: none
+		sourceColumn: Pos
+
+		annotation SummarizationSetBy = Automatic
+
+	column Min
+		dataType: int64
+		formatString: 0
+		lineageTag: 5f006e97-e5bc-4d32-b6f9-26b4169c43d6
+		summarizeBy: sum
+		sourceColumn: Min
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gls
+		dataType: int64
+		formatString: 0
+		lineageTag: 0aa8aed2-e8e5-45cb-a5be-7ac34434df3c
+		summarizeBy: sum
+		sourceColumn: Gls
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ast
+		dataType: int64
+		formatString: 0
+		lineageTag: fe6c40b0-48af-4df1-9b43-3db4b42a7312
+		summarizeBy: sum
+		sourceColumn: Ast
+
+		annotation SummarizationSetBy = Automatic
+
+	column PK
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b6c5e45-6ba8-4118-aec9-81fb3720805b
+		summarizeBy: sum
+		sourceColumn: PK
+
+		annotation SummarizationSetBy = Automatic
+
+	column PKatt
+		dataType: int64
+		formatString: 0
+		lineageTag: 0307c502-f11d-4c73-bc88-72acb755e50d
+		summarizeBy: sum
+		sourceColumn: PKatt
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sh
+		dataType: int64
+		formatString: 0
+		lineageTag: 6fb2b8d1-68ec-4d15-8b4a-3895ce076f2b
+		summarizeBy: sum
+		sourceColumn: Sh
+
+		annotation SummarizationSetBy = Automatic
+
+	column SoT
+		dataType: int64
+		formatString: 0
+		lineageTag: b0779739-dd62-49fc-ba88-55744e238266
+		summarizeBy: sum
+		sourceColumn: SoT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CrdY
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ed84e0a-284c-4009-ad8c-05880835a492
+		summarizeBy: sum
+		sourceColumn: CrdY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CrdR
+		dataType: int64
+		formatString: 0
+		lineageTag: 6724da02-f903-4abc-8b91-9130f69ccaf6
+		summarizeBy: sum
+		sourceColumn: CrdR
+
+		annotation SummarizationSetBy = Automatic
+
+	column Touches
+		dataType: int64
+		formatString: 0
+		lineageTag: 9f032190-8bbb-4122-a0a0-83a084dd8c01
+		summarizeBy: sum
+		sourceColumn: Touches
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tkl
+		dataType: int64
+		formatString: 0
+		lineageTag: 40525a64-c96f-4ee2-975a-5b699b9a4677
+		summarizeBy: sum
+		sourceColumn: Tkl
+
+		annotation SummarizationSetBy = Automatic
+
+	column Int
+		dataType: int64
+		formatString: 0
+		lineageTag: 4fbbe257-0854-4a0c-8966-dcf7b0db9fc1
+		summarizeBy: sum
+		sourceColumn: Int
+
+		annotation SummarizationSetBy = Automatic
+
+	column Blocks
+		dataType: int64
+		formatString: 0
+		lineageTag: 460a60c1-9a41-44ed-b120-19542ebd613a
+		summarizeBy: sum
+		sourceColumn: Blocks
+
+		annotation SummarizationSetBy = Automatic
+
+	column xG
+		dataType: double
+		lineageTag: 2f07caeb-ccbb-4d95-b877-4c762ae5d0c7
+		summarizeBy: sum
+		sourceColumn: xG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column npxG
+		dataType: double
+		lineageTag: 64e18db0-6942-4cc1-a56f-c2c9c6107411
+		summarizeBy: sum
+		sourceColumn: npxG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column xAG
+		dataType: double
+		lineageTag: 16b4f810-0f30-433a-9967-bca93cbb364b
+		summarizeBy: sum
+		sourceColumn: xAG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SCA
+		dataType: int64
+		formatString: 0
+		lineageTag: 61e79293-adee-40d5-8753-4dcfd541b051
+		summarizeBy: sum
+		sourceColumn: SCA
+
+		annotation SummarizationSetBy = Automatic
+
+	column GCA
+		dataType: int64
+		formatString: 0
+		lineageTag: 7153fdc9-b53c-47a1-90b0-bda893432251
+		summarizeBy: sum
+		sourceColumn: GCA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Passes_Cmp
+		dataType: int64
+		formatString: 0
+		lineageTag: 986d080a-3b49-452c-aaa2-7c0c85d9f0d2
+		summarizeBy: sum
+		sourceColumn: Passes_Cmp
+
+		annotation SummarizationSetBy = Automatic
+
+	column Passes_Att
+		dataType: int64
+		formatString: 0
+		lineageTag: 8db4e096-e393-4852-9bdb-c2fff1c5a8f5
+		summarizeBy: sum
+		sourceColumn: Passes_Att
+
+		annotation SummarizationSetBy = Automatic
+
+	column Passes_Cmp%
+		dataType: double
+		lineageTag: 71231187-8a9e-473f-8409-c3dbc2ac8729
+		summarizeBy: sum
+		sourceColumn: Passes_Cmp%
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Passes_PrgP
+		dataType: int64
+		formatString: 0
+		lineageTag: 61653ce5-d0c3-4587-a156-eb065fb0925a
+		summarizeBy: sum
+		sourceColumn: Passes_PrgP
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carries
+		dataType: int64
+		formatString: 0
+		lineageTag: 8eb4c9de-1e7b-4710-bb57-991b8b55376e
+		summarizeBy: sum
+		sourceColumn: Carries
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carries_PrgC
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ce2c5b1-6d25-41d3-b560-c103327b419c
+		summarizeBy: sum
+		sourceColumn: Carries_PrgC
+
+		annotation SummarizationSetBy = Automatic
+
+	column Take-Ons_Att
+		dataType: int64
+		formatString: 0
+		lineageTag: 0c128133-9c16-4c7e-adc2-27a2620a1ca2
+		summarizeBy: sum
+		sourceColumn: Take-Ons_Att
+
+		annotation SummarizationSetBy = Automatic
+
+	column Take-Ons_Succ
+		dataType: int64
+		formatString: 0
+		lineageTag: e96536f3-084b-4b6e-b390-76fa6f0b15f6
+		summarizeBy: sum
+		sourceColumn: Take-Ons_Succ
+
+		annotation SummarizationSetBy = Automatic
+
+	column Total_TotDist
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ac26a7a-686a-475b-bf01-b0ac8089bc8d
+		summarizeBy: sum
+		sourceColumn: Total_TotDist
+
+		annotation SummarizationSetBy = Automatic
+
+	column Total_PrgDist
+		dataType: int64
+		formatString: 0
+		lineageTag: fe2c2361-b0d3-446d-a863-8e1ff2d9c46e
+		summarizeBy: sum
+		sourceColumn: Total_PrgDist
+
+		annotation SummarizationSetBy = Automatic
+
+	column Short_Cmp
+		dataType: int64
+		formatString: 0
+		lineageTag: edf222b1-f534-4797-9042-7655073875b6
+		summarizeBy: sum
+		sourceColumn: Short_Cmp
+
+		annotation SummarizationSetBy = Automatic
+
+	column Short_Att
+		dataType: int64
+		formatString: 0
+		lineageTag: 9cc2728e-9672-4b35-a8d2-7c7fec268cc0
+		summarizeBy: sum
+		sourceColumn: Short_Att
+
+		annotation SummarizationSetBy = Automatic
+
+	column Short_Cmp%
+		dataType: double
+		lineageTag: cbb8f0d0-a665-4388-837d-afc047e96873
+		summarizeBy: sum
+		sourceColumn: Short_Cmp%
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Medium_Cmp
+		dataType: int64
+		formatString: 0
+		lineageTag: 45d78f11-651e-4d4c-90fa-4c1905024d96
+		summarizeBy: sum
+		sourceColumn: Medium_Cmp
+
+		annotation SummarizationSetBy = Automatic
+
+	column Medium_Att
+		dataType: int64
+		formatString: 0
+		lineageTag: c3cc5804-57ca-4c7d-83e1-7f83b78dfcbf
+		summarizeBy: sum
+		sourceColumn: Medium_Att
+
+		annotation SummarizationSetBy = Automatic
+
+	column Medium_Cmp%
+		dataType: double
+		lineageTag: 7c968435-5b90-4a9a-81cf-6dab3efa2e3a
+		summarizeBy: sum
+		sourceColumn: Medium_Cmp%
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Long_Cmp
+		dataType: int64
+		formatString: 0
+		lineageTag: 248f459e-394f-4d6f-8b6a-7b1310ece531
+		summarizeBy: sum
+		sourceColumn: Long_Cmp
+
+		annotation SummarizationSetBy = Automatic
+
+	column Long_Att
+		dataType: int64
+		formatString: 0
+		lineageTag: a91b3d62-3d90-4b3c-9c8e-932cda2f7421
+		summarizeBy: sum
+		sourceColumn: Long_Att
+
+		annotation SummarizationSetBy = Automatic
+
+	column Long_Cmp%
+		dataType: double
+		lineageTag: 6bb7742a-87e4-441e-b359-75fb223d9e38
+		summarizeBy: sum
+		sourceColumn: Long_Cmp%
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column xA
+		dataType: double
+		lineageTag: 95be45c4-6115-4599-9b70-b41bb821a84f
+		summarizeBy: sum
+		sourceColumn: xA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KP
+		dataType: int64
+		formatString: 0
+		lineageTag: b9926a2e-71cb-4530-b1d3-2333b8c07b42
+		summarizeBy: sum
+		sourceColumn: KP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 1/3
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f347b17-ef84-47ec-a5e4-62d501c9f43e
+		summarizeBy: sum
+		sourceColumn: 1/3
+
+		annotation SummarizationSetBy = Automatic
+
+	column PPA
+		dataType: int64
+		formatString: 0
+		lineageTag: e211a7ce-8bdc-42b5-af2b-d0455a56c5e0
+		summarizeBy: sum
+		sourceColumn: PPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CrsPA
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a3424c0-5a17-44a9-9e99-11df9cd2f95c
+		summarizeBy: sum
+		sourceColumn: CrsPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pass Types_Live'
+		dataType: int64
+		formatString: 0
+		lineageTag: ab8a6ed9-150e-4572-9f6f-baec35d01b9c
+		summarizeBy: sum
+		sourceColumn: Pass Types_Live
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pass Types_Dead'
+		dataType: int64
+		formatString: 0
+		lineageTag: 144d1785-3aaa-47bf-8df7-603171e9d639
+		summarizeBy: sum
+		sourceColumn: Pass Types_Dead
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pass Types_FK'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9dc0615f-5552-4421-8e58-6463a6bd096f
+		summarizeBy: sum
+		sourceColumn: Pass Types_FK
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pass Types_TB'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f4cc833-7957-434f-b057-46cabef93ebb
+		summarizeBy: sum
+		sourceColumn: Pass Types_TB
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pass Types_Sw'
+		dataType: int64
+		formatString: 0
+		lineageTag: 84beee1a-0c89-4feb-8a80-514aa8d254ea
+		summarizeBy: sum
+		sourceColumn: Pass Types_Sw
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pass Types_Crs'
+		dataType: int64
+		formatString: 0
+		lineageTag: 97b0d6fa-a868-4b5a-afc0-f36f62b43d10
+		summarizeBy: sum
+		sourceColumn: Pass Types_Crs
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pass Types_TI'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3cd0c76e-f338-4a56-9454-e39d66ff5454
+		summarizeBy: sum
+		sourceColumn: Pass Types_TI
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pass Types_CK'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f5b987c-c8b1-40a8-8699-841ecc7f365c
+		summarizeBy: sum
+		sourceColumn: Pass Types_CK
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Corner Kicks_In'
+		dataType: int64
+		formatString: 0
+		lineageTag: d2757b5e-84cb-40ea-b9bd-1434956eb1f7
+		summarizeBy: sum
+		sourceColumn: Corner Kicks_In
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Corner Kicks_Out'
+		dataType: int64
+		formatString: 0
+		lineageTag: 45714cf2-d905-48cd-b63c-2b2608bc8baf
+		summarizeBy: sum
+		sourceColumn: Corner Kicks_Out
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Corner Kicks_Str'
+		dataType: int64
+		formatString: 0
+		lineageTag: b913783d-8b00-480b-b0f1-e7153dd43bcf
+		summarizeBy: sum
+		sourceColumn: Corner Kicks_Str
+
+		annotation SummarizationSetBy = Automatic
+
+	column Outcomes_Cmp
+		dataType: int64
+		formatString: 0
+		lineageTag: c1770b9a-3e73-4aac-90d2-48f4a82a96b4
+		summarizeBy: sum
+		sourceColumn: Outcomes_Cmp
+
+		annotation SummarizationSetBy = Automatic
+
+	column Outcomes_Off
+		dataType: int64
+		formatString: 0
+		lineageTag: f4d3b6b7-6564-4b45-af90-3a8d6dc2ad7d
+		summarizeBy: sum
+		sourceColumn: Outcomes_Off
+
+		annotation SummarizationSetBy = Automatic
+
+	column Outcomes_Blocks
+		dataType: int64
+		formatString: 0
+		lineageTag: 38330a6d-c1be-4c96-8313-c9c0ead14671
+		summarizeBy: sum
+		sourceColumn: Outcomes_Blocks
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tackles_TklW
+		dataType: int64
+		formatString: 0
+		lineageTag: 8db7af1e-1232-4768-8a63-85617aa304d5
+		summarizeBy: sum
+		sourceColumn: Tackles_TklW
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tackles_Def 3rd'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3fdfbc6d-636e-46f7-9025-37918d550a3c
+		summarizeBy: sum
+		sourceColumn: Tackles_Def 3rd
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tackles_Mid 3rd'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3862ad2a-349f-43ae-ac96-4e614c7802f0
+		summarizeBy: sum
+		sourceColumn: Tackles_Mid 3rd
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tackles_Att 3rd'
+		dataType: int64
+		formatString: 0
+		lineageTag: 774bafa9-55b2-4262-a655-0367470c6777
+		summarizeBy: sum
+		sourceColumn: Tackles_Att 3rd
+
+		annotation SummarizationSetBy = Automatic
+
+	column Challenges_Tkl
+		dataType: int64
+		formatString: 0
+		lineageTag: 89c329a1-cf40-44ad-af54-01eb373a5d71
+		summarizeBy: sum
+		sourceColumn: Challenges_Tkl
+
+		annotation SummarizationSetBy = Automatic
+
+	column Challenges_Att
+		dataType: int64
+		formatString: 0
+		lineageTag: 285d27c7-bdcf-4b02-9cd6-cfba798a2c62
+		summarizeBy: sum
+		sourceColumn: Challenges_Att
+
+		annotation SummarizationSetBy = Automatic
+
+	column Challenges_Tkl%
+		dataType: double
+		lineageTag: 4dc38d3e-cf46-48a0-ae3b-ed473103f2d7
+		summarizeBy: sum
+		sourceColumn: Challenges_Tkl%
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Challenges_Lost
+		dataType: int64
+		formatString: 0
+		lineageTag: 581583d1-4880-4542-a1bd-6a528fc59dba
+		summarizeBy: sum
+		sourceColumn: Challenges_Lost
+
+		annotation SummarizationSetBy = Automatic
+
+	column Blocks_Sh
+		dataType: int64
+		formatString: 0
+		lineageTag: cf58b858-642c-4240-b2a2-1ffe23d6f335
+		summarizeBy: sum
+		sourceColumn: Blocks_Sh
+
+		annotation SummarizationSetBy = Automatic
+
+	column Blocks_Pass
+		dataType: int64
+		formatString: 0
+		lineageTag: bafc9267-b30c-4304-a031-5194f858375c
+		summarizeBy: sum
+		sourceColumn: Blocks_Pass
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Int.1'
+		dataType: int64
+		formatString: 0
+		lineageTag: 45d41c3a-5fee-489e-a0e8-286733b2f3d5
+		summarizeBy: sum
+		sourceColumn: Int.1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tkl+Int
+		dataType: int64
+		formatString: 0
+		lineageTag: 9fbbda69-6eca-44ac-85b5-e391d02b215f
+		summarizeBy: sum
+		sourceColumn: Tkl+Int
+
+		annotation SummarizationSetBy = Automatic
+
+	column Clr
+		dataType: int64
+		formatString: 0
+		lineageTag: fc6cc6e9-e90b-499c-a61a-6308f47335c3
+		summarizeBy: sum
+		sourceColumn: Clr
+
+		annotation SummarizationSetBy = Automatic
+
+	column Err
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d7d7536-f0a8-486d-8320-ec72d61a66b8
+		summarizeBy: sum
+		sourceColumn: Err
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Touches_Def Pen'
+		dataType: int64
+		formatString: 0
+		lineageTag: 562a6d1e-50f7-4b48-81ca-4f99f3e31753
+		summarizeBy: sum
+		sourceColumn: Touches_Def Pen
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Touches_Def 3rd'
+		dataType: int64
+		formatString: 0
+		lineageTag: e6d64d55-54b1-4857-b517-286c7991b0b7
+		summarizeBy: sum
+		sourceColumn: Touches_Def 3rd
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Touches_Mid 3rd'
+		dataType: int64
+		formatString: 0
+		lineageTag: ea64de53-5e5a-44b6-aafc-e5d44960c204
+		summarizeBy: sum
+		sourceColumn: Touches_Mid 3rd
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Touches_Att 3rd'
+		dataType: int64
+		formatString: 0
+		lineageTag: 93a400e8-0e97-4f8f-928c-c43a6863a784
+		summarizeBy: sum
+		sourceColumn: Touches_Att 3rd
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Touches_Att Pen'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3c725543-bf02-4908-a6bc-4d5a4d24d717
+		summarizeBy: sum
+		sourceColumn: Touches_Att Pen
+
+		annotation SummarizationSetBy = Automatic
+
+	column Take-Ons_Succ%
+		dataType: double
+		lineageTag: 8af942d9-ee65-4d6c-9c1b-559951068335
+		summarizeBy: sum
+		sourceColumn: Take-Ons_Succ%
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Take-Ons_Tkld
+		dataType: int64
+		formatString: 0
+		lineageTag: dddf609d-8ef0-4314-b98f-797121468aaf
+		summarizeBy: sum
+		sourceColumn: Take-Ons_Tkld
+
+		annotation SummarizationSetBy = Automatic
+
+	column Take-Ons_Tkld%
+		dataType: double
+		lineageTag: d67ab518-d2ef-4684-afde-ebc51b65eb22
+		summarizeBy: sum
+		sourceColumn: Take-Ons_Tkld%
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Carries_TotDist
+		dataType: int64
+		formatString: 0
+		lineageTag: 725f73f7-7ad7-4988-81b8-a37d82316889
+		summarizeBy: sum
+		sourceColumn: Carries_TotDist
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carries_PrgDist
+		dataType: int64
+		formatString: 0
+		lineageTag: ba22654e-fbbf-480b-bf04-a13770c6baa4
+		summarizeBy: sum
+		sourceColumn: Carries_PrgDist
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carries_1/3
+		dataType: int64
+		formatString: 0
+		lineageTag: c2680087-adea-4bb1-a416-98a22935e9ea
+		summarizeBy: sum
+		sourceColumn: Carries_1/3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carries_CPA
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a528e69-049f-4e9a-ba82-d17979379d6d
+		summarizeBy: sum
+		sourceColumn: Carries_CPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carries_Mis
+		dataType: int64
+		formatString: 0
+		lineageTag: 53398878-6498-495b-9fda-b2637c487d1e
+		summarizeBy: sum
+		sourceColumn: Carries_Mis
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carries_Dis
+		dataType: int64
+		formatString: 0
+		lineageTag: 32c2f9a7-a416-45b8-96b4-1ea3e25b4f99
+		summarizeBy: sum
+		sourceColumn: Carries_Dis
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rec
+		dataType: int64
+		formatString: 0
+		lineageTag: 483b371e-3730-4fcd-94a0-0bdeab7caf4c
+		summarizeBy: sum
+		sourceColumn: Rec
+
+		annotation SummarizationSetBy = Automatic
+
+	column PrgR
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ea862a0-573c-4635-a2b3-9ead865259a3
+		summarizeBy: sum
+		sourceColumn: PrgR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 2CrdY
+		dataType: int64
+		formatString: 0
+		lineageTag: 9f766eae-1bd7-4612-86ec-37cbad762e4b
+		summarizeBy: sum
+		sourceColumn: 2CrdY
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fls
+		dataType: int64
+		formatString: 0
+		lineageTag: b5680d64-2ffc-4de7-bc0f-b6683d9eb0a1
+		summarizeBy: sum
+		sourceColumn: Fls
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fld
+		dataType: int64
+		formatString: 0
+		lineageTag: 7230e058-efca-495c-b5f0-b56579d76ff7
+		summarizeBy: sum
+		sourceColumn: Fld
+
+		annotation SummarizationSetBy = Automatic
+
+	column Off
+		dataType: int64
+		formatString: 0
+		lineageTag: d25abdd5-3478-47fb-9604-f44bcd59dbf2
+		summarizeBy: sum
+		sourceColumn: Off
+
+		annotation SummarizationSetBy = Automatic
+
+	column Crs
+		dataType: int64
+		formatString: 0
+		lineageTag: 0b6e6723-5a5e-46b5-8780-248ff2e1419e
+		summarizeBy: sum
+		sourceColumn: Crs
+
+		annotation SummarizationSetBy = Automatic
+
+	column TklW
+		dataType: int64
+		formatString: 0
+		lineageTag: c311feb4-07c1-455d-a17a-0472a0ab53bb
+		summarizeBy: sum
+		sourceColumn: TklW
+
+		annotation SummarizationSetBy = Automatic
+
+	column PKwon
+		dataType: int64
+		formatString: 0
+		lineageTag: d0c1f083-e8e3-4aba-8041-900a6820dd7d
+		summarizeBy: sum
+		sourceColumn: PKwon
+
+		annotation SummarizationSetBy = Automatic
+
+	column PKcon
+		dataType: int64
+		formatString: 0
+		lineageTag: bc682146-603b-41e7-9388-8ee4db6391e2
+		summarizeBy: sum
+		sourceColumn: PKcon
+
+		annotation SummarizationSetBy = Automatic
+
+	column OG
+		dataType: int64
+		formatString: 0
+		lineageTag: 237527a0-7fad-4f6d-a37e-bb3706348122
+		summarizeBy: sum
+		sourceColumn: OG
+
+		annotation SummarizationSetBy = Automatic
+
+	column Recov
+		dataType: int64
+		formatString: 0
+		lineageTag: f86c7da1-3345-4caa-b4c3-d4e026903d8d
+		summarizeBy: sum
+		sourceColumn: Recov
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Aerial Duels_Won'
+		dataType: int64
+		formatString: 0
+		lineageTag: 46396b07-443a-468e-beba-b2c5ff73aad8
+		summarizeBy: sum
+		sourceColumn: Aerial Duels_Won
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Aerial Duels_Lost'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9a4dda49-d323-4ed9-acbd-87ecb74b758b
+		summarizeBy: sum
+		sourceColumn: Aerial Duels_Lost
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Aerial Duels_Won%'
+		dataType: double
+		lineageTag: 8b1b03fb-c241-44f2-9666-98fb487ce3e2
+		summarizeBy: sum
+		sourceColumn: Aerial Duels_Won%
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Índice
+		dataType: int64
+		formatString: 0
+		lineageTag: 3dab3c3a-0ec7-4425-8a36-741b99e15eeb
+		summarizeBy: sum
+		sourceColumn: Índice
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Aerial Duels_Total'
+		dataType: int64
+		formatString: 0
+		lineageTag: 49377e82-3cf3-4ee2-9d51-a12c456bfcaf
+		summarizeBy: sum
+		sourceColumn: Aerial Duels_Total
+
+		annotation SummarizationSetBy = Automatic
+
+	column vsSquad
+		dataType: string
+		lineageTag: d54298aa-f742-4820-89d5-38e0cb76c5b0
+		summarizeBy: none
+		sourceColumn: vsSquad
+
+		annotation SummarizationSetBy = Automatic
+
+	column G-xG
+		dataType: double
+		lineageTag: ff527f8d-8b1f-49bd-8328-5959c399e69e
+		summarizeBy: sum
+		sourceColumn: G-xG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column A-xA
+		dataType: double
+		lineageTag: e58140a0-4843-4396-adc1-69e8441d09e3
+		summarizeBy: sum
+		sourceColumn: A-xA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CPA+PPA
+		dataType: int64
+		formatString: 0
+		lineageTag: edbbf1aa-ed26-42c6-8fdb-65b621bc260c
+		summarizeBy: sum
+		sourceColumn: CPA+PPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Squad_or_vs
+		dataType: string
+		lineageTag: d392e13c-3c3a-4bee-b9bd-7175234407c7
+		summarizeBy: none
+		sourceColumn: Squad_or_vs
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ucl2425_vs = m
+		mode: import
+		source =
+				let
+				    Fonte = ucl2425,
+				    #"Consultas Mescladas" = Table.NestedJoin(Fonte, {"Match_ID"}, fixturesucl2425, {"Match_ID"}, "fixturesucl2425", JoinKind.LeftOuter),
+				    #"fixturesucl2425 Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "fixturesucl2425", {"Home", "Away"}, {"fixturesucl2425.Home", "fixturesucl2425.Away"}),
+				    #"Coluna Condicional Adicionada" = Table.AddColumn(#"fixturesucl2425 Expandido", "Opponent", each if [Squad] = [fixturesucl2425.Home] then [fixturesucl2425.Away] else [fixturesucl2425.Home]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Coluna Condicional Adicionada",{{"Opponent", type text}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado",{{"Opponent", "Squad_or_vs"}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Colunas Renomeadas",{"fixturesucl2425.Home", "fixturesucl2425.Away"}),
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Colunas Removidas", "Coluna1", each Text.Combine({"vs ", [Squad_or_vs]}), type text),
+				    #"Colunas Removidas1" = Table.RemoveColumns(#"Coluna Mesclada Inserida",{"Squad_or_vs"}),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Colunas Removidas1",{{"Coluna1", "Squad_or_vs"}}),
+				    #"Linhas Filtradas" = Table.SelectRows(#"Colunas Renomeadas1", each ([Squad_or_vs] = "vs Arsenal"))
+				in
+				    #"Linhas Filtradas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

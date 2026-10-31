@@ -680,15 +680,6 @@ table ucl2425
 
 		annotation SummarizationSetBy = Automatic
 
-	column Int_1
-		dataType: int64
-		formatString: 0
-		lineageTag: b4e017fb-a7a1-4ed7-adb4-35337c12c79f
-		summarizeBy: sum
-		sourceColumn: Int_1
-
-		annotation SummarizationSetBy = Automatic
-
 	column Tkl+Int
 		dataType: int64
 		formatString: 0
@@ -1047,18 +1038,33 @@ table ucl2425
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Int.1'
+		dataType: int64
+		formatString: 0
+		lineageTag: b0c3bef2-2846-4c70-b0c9-0913b90090af
+		summarizeBy: sum
+		sourceColumn: Int.1
+
+		annotation SummarizationSetBy = Automatic
+
 	partition ucl2425 = m
 		mode: import
 		source =
 				let
-				    Fonte = Csv.Document(Web.Contents("https://raw.githubusercontent.com/guilhermefrrr/ucl2425/refs/heads/main/complete-data/statsucl2425.csv"),[Delimiter=",", Columns=108, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(Web.Contents("https://raw.githubusercontent.com/guilhermefrrr/champions-league-2024-25/refs/heads/main/complete-data/statsucl2425.csv"),[Delimiter=",", Columns=108, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Column13", type text}, {"Column14", type text}, {"Column15", type text}, {"Column16", type text}, {"Column17", type text}, {"Column18", type text}, {"Column19", type text}, {"Column20", type text}, {"Column21", type text}, {"Column22", type text}, {"Column23", type text}, {"Column24", type text}, {"Column25", type text}, {"Column26", type text}, {"Column27", type text}, {"Column28", type text}, {"Column29", type text}, {"Column30", type text}, {"Column31", type text}, {"Column32", type text}, {"Column33", type text}, {"Column34", type text}, {"Column35", type text}, {"Column36", type text}, {"Column37", type text}, {"Column38", type text}, {"Column39", type text}, {"Column40", type text}, {"Column41", type text}, {"Column42", type text}, {"Column43", type text}, {"Column44", type text}, {"Column45", type text}, {"Column46", type text}, {"Column47", type text}, {"Column48", type text}, {"Column49", type text}, {"Column50", type text}, {"Column51", type text}, {"Column52", type text}, {"Column53", type text}, {"Column54", type text}, {"Column55", type text}, {"Column56", type text}, {"Column57", type text}, {"Column58", type text}, {"Column59", type text}, {"Column60", type text}, {"Column61", type text}, {"Column62", type text}, {"Column63", type text}, {"Column64", type text}, {"Column65", type text}, {"Column66", type text}, {"Column67", type text}, {"Column68", type text}, {"Column69", type text}, {"Column70", type text}, {"Column71", type text}, {"Column72", type text}, {"Column73", type text}, {"Column74", type text}, {"Column75", type text}, {"Column76", type text}, {"Column77", type text}, {"Column78", type text}, {"Column79", type text}, {"Column80", type text}, {"Column81", type text}, {"Column82", type text}, {"Column83", type text}, {"Column84", type text}, {"Column85", type text}, {"Column86", type text}, {"Column87", type text}, {"Column88", type text}, {"Column89", type text}, {"Column90", type text}, {"Column91", type text}, {"Column92", type text}, {"Column93", type text}, {"Column94", type text}, {"Column95", type text}, {"Column96", type text}, {"Column97", type text}, {"Column98", type text}, {"Column99", type text}, {"Column100", type text}, {"Column101", type text}, {"Column102", type text}, {"Column103", type text}, {"Column104", type text}, {"Column105", type text}, {"Column106", type text}, {"Column107", type text}, {"Column108", type text}}),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(#"Tipo Alterado", [PromoteAllScalars=true]),
-				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"MD", Int64.Type}, {"Match_ID", Int64.Type}, {"Player", type text}, {"Squad", type text}, {"#", Int64.Type}, {"Nation", type text}, {"Age_Years", Int64.Type}, {"Age_Days", Int64.Type}, {"Pos", type text}, {"Min", Int64.Type}, {"Gls", Int64.Type}, {"Ast", Int64.Type}, {"PK", Int64.Type}, {"PKatt", Int64.Type}, {"Sh", Int64.Type}, {"SoT", Int64.Type}, {"CrdY", Int64.Type}, {"CrdR", Int64.Type}, {"Touches", Int64.Type}, {"Tkl", Int64.Type}, {"Int", Int64.Type}, {"Blocks", Int64.Type}, {"xG", type number}, {"npxG", type number}, {"xAG", type number}, {"SCA", Int64.Type}, {"GCA", Int64.Type}, {"Passes_Cmp", Int64.Type}, {"Passes_Att", Int64.Type}, {"Passes_Cmp%", type number}, {"Passes_PrgP", Int64.Type}, {"Carries", Int64.Type}, {"Carries_PrgC", Int64.Type}, {"Take-Ons_Att", Int64.Type}, {"Take-Ons_Succ", Int64.Type}, {"Total_TotDist", Int64.Type}, {"Total_PrgDist", Int64.Type}, {"Short_Cmp", Int64.Type}, {"Short_Att", Int64.Type}, {"Short_Cmp%", type number}, {"Medium_Cmp", Int64.Type}, {"Medium_Att", Int64.Type}, {"Medium_Cmp%", type number}, {"Long_Cmp", Int64.Type}, {"Long_Att", Int64.Type}, {"Long_Cmp%", type number}, {"xA", type number}, {"KP", Int64.Type}, {"1/3", Int64.Type}, {"PPA", Int64.Type}, {"CrsPA", Int64.Type}, {"Pass Types_Live", Int64.Type}, {"Pass Types_Dead", Int64.Type}, {"Pass Types_FK", Int64.Type}, {"Pass Types_TB", Int64.Type}, {"Pass Types_Sw", Int64.Type}, {"Pass Types_Crs", Int64.Type}, {"Pass Types_TI", Int64.Type}, {"Pass Types_CK", Int64.Type}, {"Corner Kicks_In", Int64.Type}, {"Corner Kicks_Out", Int64.Type}, {"Corner Kicks_Str", Int64.Type}, {"Outcomes_Cmp", Int64.Type}, {"Outcomes_Off", Int64.Type}, {"Outcomes_Blocks", Int64.Type}, {"Tackles_TklW", Int64.Type}, {"Tackles_Def 3rd", Int64.Type}, {"Tackles_Mid 3rd", Int64.Type}, {"Tackles_Att 3rd", Int64.Type}, {"Challenges_Tkl", Int64.Type}, {"Challenges_Att", Int64.Type}, {"Challenges_Tkl%", type number}, {"Challenges_Lost", Int64.Type}, {"Blocks_Sh", Int64.Type}, {"Blocks_Pass", Int64.Type}, {"Int_1", Int64.Type}, {"Tkl+Int", Int64.Type}, {"Clr", Int64.Type}, {"Err", Int64.Type}, {"Touches_Def Pen", Int64.Type}, {"Touches_Def 3rd", Int64.Type}, {"Touches_Mid 3rd", Int64.Type}, {"Touches_Att 3rd", Int64.Type}, {"Touches_Att Pen", Int64.Type}, {"Take-Ons_Succ%", type number}, {"Take-Ons_Tkld", Int64.Type}, {"Take-Ons_Tkld%", type number}, {"Carries_TotDist", Int64.Type}, {"Carries_PrgDist", Int64.Type}, {"Carries_1/3", Int64.Type}, {"Carries_CPA", Int64.Type}, {"Carries_Mis", Int64.Type}, {"Carries_Dis", Int64.Type}, {"Rec", Int64.Type}, {"PrgR", Int64.Type}, {"2CrdY", Int64.Type}, {"Fls", Int64.Type}, {"Fld", Int64.Type}, {"Off", Int64.Type}, {"Crs", Int64.Type}, {"TklW", Int64.Type}, {"PKwon", Int64.Type}, {"PKcon", Int64.Type}, {"OG", Int64.Type}, {"Recov", Int64.Type}, {"Aerial Duels_Won", Int64.Type}, {"Aerial Duels_Lost", Int64.Type}, {"Aerial Duels_Won%", type number}}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"MD", Int64.Type}, {"Match_ID", Int64.Type}, {"Player", type text}, {"Squad", type text}, {"#", Int64.Type}, {"Nation", type text}, {"Age_Years", Int64.Type}, {"Age_Days", Int64.Type}, {"Pos", type text}, {"Min", Int64.Type}, {"Gls", Int64.Type}, {"Ast", Int64.Type}, {"PK", Int64.Type}, {"PKatt", Int64.Type}, {"Sh", Int64.Type}, {"SoT", Int64.Type}, {"CrdY", Int64.Type}, {"CrdR", Int64.Type}, {"Touches", Int64.Type}, {"Tkl", Int64.Type}, {"Int", Int64.Type}, {"Blocks", Int64.Type}, {"xG", type number}, {"npxG", type number}, {"xAG", type number}, {"SCA", Int64.Type}, {"GCA", Int64.Type}, {"Passes_Cmp", Int64.Type}, {"Passes_Att", Int64.Type}, {"Passes_Cmp%", type number}, {"Passes_PrgP", Int64.Type}, {"Carries", Int64.Type}, {"Carries_PrgC", Int64.Type}, {"Take-Ons_Att", Int64.Type}, {"Take-Ons_Succ", Int64.Type}, {"Total_TotDist", Int64.Type}, {"Total_PrgDist", Int64.Type}, {"Short_Cmp", Int64.Type}, {"Short_Att", Int64.Type}, {"Short_Cmp%", type number}, {"Medium_Cmp", Int64.Type}, {"Medium_Att", Int64.Type}, {"Medium_Cmp%", type number}, {"Long_Cmp", Int64.Type}, {"Long_Att", Int64.Type}, {"Long_Cmp%", type number}, {"xA", type number}, {"KP", Int64.Type}, {"1/3", Int64.Type}, {"PPA", Int64.Type}, {"CrsPA", Int64.Type}, {"Pass Types_Live", Int64.Type}, {"Pass Types_Dead", Int64.Type}, {"Pass Types_FK", Int64.Type}, {"Pass Types_TB", Int64.Type}, {"Pass Types_Sw", Int64.Type}, {"Pass Types_Crs", Int64.Type}, {"Pass Types_TI", Int64.Type}, {"Pass Types_CK", Int64.Type}, {"Corner Kicks_In", Int64.Type}, {"Corner Kicks_Out", Int64.Type}, {"Corner Kicks_Str", Int64.Type}, {"Outcomes_Cmp", Int64.Type}, {"Outcomes_Off", Int64.Type}, {"Outcomes_Blocks", Int64.Type}, {"Tackles_TklW", Int64.Type}, {"Tackles_Def 3rd", Int64.Type}, {"Tackles_Mid 3rd", Int64.Type}, {"Tackles_Att 3rd", Int64.Type}, {"Challenges_Tkl", Int64.Type}, {"Challenges_Att", Int64.Type}, {"Challenges_Tkl%", type number}, {"Challenges_Lost", Int64.Type}, {"Blocks_Sh", Int64.Type}, {"Blocks_Pass", Int64.Type}, {"Int.1", Int64.Type}, {"Tkl+Int", Int64.Type}, {"Clr", Int64.Type}, {"Err", Int64.Type}, {"Touches_Def Pen", Int64.Type}, {"Touches_Def 3rd", Int64.Type}, {"Touches_Mid 3rd", Int64.Type}, {"Touches_Att 3rd", Int64.Type}, {"Touches_Att Pen", Int64.Type}, {"Take-Ons_Succ%", type number}, {"Take-Ons_Tkld", Int64.Type}, {"Take-Ons_Tkld%", type number}, {"Carries_TotDist", Int64.Type}, {"Carries_PrgDist", Int64.Type}, {"Carries_1/3", Int64.Type}, {"Carries_CPA", Int64.Type}, {"Carries_Mis", Int64.Type}, {"Carries_Dis", Int64.Type}, {"Rec", Int64.Type}, {"PrgR", Int64.Type}, {"2CrdY", Int64.Type}, {"Fls", Int64.Type}, {"Fld", Int64.Type}, {"Off", Int64.Type}, {"Crs", Int64.Type}, {"TklW", Int64.Type}, {"PKwon", Int64.Type}, {"PKcon", Int64.Type}, {"OG", Int64.Type}, {"Recov", Int64.Type}, {"Aerial Duels_Won", Int64.Type}, {"Aerial Duels_Lost", Int64.Type}, {"Aerial Duels_Won%", type number}}),
 				    #"Índice Adicionado" = Table.AddIndexColumn(#"Tipo Alterado1", "Índice", 1, 1, Int64.Type),
 				    #"Personalização Adicionada" = Table.AddColumn(#"Índice Adicionado", "Aerial Duels_Total", each [Aerial Duels_Won] + [Aerial Duels_Lost]),
 				    #"Tipo Alterado2" = Table.TransformColumnTypes(#"Personalização Adicionada",{{"Aerial Duels_Total", Int64.Type}}),
-				    #"Merged Queries" = Table.NestedJoin(#"Tipo Alterado2", {"Match_ID"}, fixturesucl2425, {"Match_ID"}, "fixturesucl2425", JoinKind.LeftOuter),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Tipo Alterado2","Paris S-G","Paris Saint-Germain",Replacer.ReplaceValue,{"Squad"}),
+				    #"Valor Substituído1" = Table.ReplaceValue(#"Valor Substituído","Inter","Internazionale",Replacer.ReplaceValue,{"Squad"}),
+				    #"Valor Substituído2" = Table.ReplaceValue(#"Valor Substituído1","Leverkusen","Bayer Leverkusen",Replacer.ReplaceValue,{"Squad"}),
+				    #"Valor Substituído3" = Table.ReplaceValue(#"Valor Substituído2","RB Salzburg","Red Bull Salzburg",Replacer.ReplaceValue,{"Squad"}),
+				    #"Valor Substituído4" = Table.ReplaceValue(#"Valor Substituído3","Red Star","Red Star Belgrade",Replacer.ReplaceValue,{"Squad"}),
+				    #"Valor Substituído5" = Table.ReplaceValue(#"Valor Substituído4","Shakhtar","Shakhtar Donetsk",Replacer.ReplaceValue,{"Squad"}),
+				    #"Merged Queries" = Table.NestedJoin(#"Valor Substituído5", {"Match_ID"}, fixturesucl2425, {"Match_ID"}, "fixturesucl2425", JoinKind.LeftOuter),
 				    #"Expanded fixturesucl2425" = Table.ExpandTableColumn(#"Merged Queries", "fixturesucl2425", {"Home", "Away"}, {"fixturesucl2425.Home", "fixturesucl2425.Away"}),
 				    #"Added Custom" = Table.AddColumn(#"Expanded fixturesucl2425", "Custom", each if [fixturesucl2425.Home] = [Squad] then [fixturesucl2425.Away] else [fixturesucl2425.Home]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Custom", type text}}),
@@ -1070,15 +1076,9 @@ table ucl2425
 				    #"Added Custom2" = Table.AddColumn(#"Changed Type1", "A-xA", each [Ast] - [xA]),
 				    #"Changed Type2" = Table.TransformColumnTypes(#"Added Custom2",{{"A-xA", type number}}),
 				    #"Added Custom3" = Table.AddColumn(#"Changed Type2", "CPA+PPA", each [Carries_CPA] + [PPA]),
-				    #"Changed Type3" = Table.TransformColumnTypes(#"Added Custom3",{{"CPA+PPA", Int64.Type}}),
-				    #"Valor Substituído" = Table.ReplaceValue(#"Changed Type3","Paris S-G","Paris Saint-Germain",Replacer.ReplaceValue,{"Squad"}),
-				    #"Valor Substituído1" = Table.ReplaceValue(#"Valor Substituído","Inter","Internazionale",Replacer.ReplaceValue,{"Squad"}),
-				    #"Valor Substituído2" = Table.ReplaceValue(#"Valor Substituído1","Leverkusen","Bayer Leverkusen",Replacer.ReplaceValue,{"Squad"}),
-				    #"Valor Substituído3" = Table.ReplaceValue(#"Valor Substituído2","RB Salzburg","Red Bull Salzburg",Replacer.ReplaceValue,{"Squad"}),
-				    #"Valor Substituído4" = Table.ReplaceValue(#"Valor Substituído3","Red Star","Red Star Belgrade",Replacer.ReplaceValue,{"Squad"}),
-				    #"Valor Substituído5" = Table.ReplaceValue(#"Valor Substituído4","Shakhtar","Shakhtar Donetsk",Replacer.ReplaceValue,{"Squad"})
+				    #"Changed Type3" = Table.TransformColumnTypes(#"Added Custom3",{{"CPA+PPA", Int64.Type}})
 				in
-				    #"Valor Substituído5"
+				    #"Changed Type3"
 
 	annotation PBI_NavigationStepName = Navegação
 

@@ -2775,29 +2775,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "ucl_2425.int_1": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "ucl2425",
-			          "ConceptualProperty": "Int_1"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "int 1": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Int_1": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
 			    "ucl_2425.tklint": {
 			      "Definition": {
 			        "Binding": {
@@ -10530,29 +10507,6 @@ cultureInfo pt-BR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.485
-			          }
-			        }
-			      ]
-			    },
-			    "ucl_2425_squad_or_vs.int_1": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "ucl2425_squad_or_vs",
-			          "ConceptualProperty": "Int_1"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "int 1": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Int_1": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
 			          }
 			        }
 			      ]

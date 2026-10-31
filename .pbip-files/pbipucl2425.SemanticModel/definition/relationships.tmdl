@@ -19,3 +19,16 @@ relationship AutoDetected_e46678a6-4307-46bb-9862-fdf84c1b1e3a
 	fromColumn: ucl2425_squad_or_vs.Match_ID
 	toColumn: fixturesucl2425.Match_ID
 
+relationship AutoDetected_a6313ca4-6f3b-45c9-a765-806aac3911e8
+	fromColumn: ucl2425_vs.MD
+	toColumn: MDs.MD
+
+relationship AutoDetected_3a57ba19-c6c0-44f9-bc11-c892e30ba1b1
+	fromColumn: ucl2425_vs.Match_ID
+	toColumn: fixturesucl2425.Match_ID
+
+relationship AutoDetected_23ffe827-2c52-4709-8c50-73a974cdfbc8
+	isActive: false
+	fromColumn: ucl2425_squad_or_vs.Player
+	toColumn: ucl2425_vs.Player
+

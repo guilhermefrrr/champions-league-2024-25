@@ -22,6 +22,7 @@ ref table fieldtiltucl2425
 ref table MDs
 ref table ucl2425_squad_or_vs
 ref table Categories
+ref table ucl2425_vs
 
 ref cultureInfo pt-BR
 
